@@ -15,7 +15,6 @@ class TestTransitionToTheConstruction:
         WebDriverWait(driver, 3).until(expected_conditions.element_to_be_clickable(LocatorsPage.construction_butt))
         driver.find_element(*LocatorsPage.construction_butt).click()
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
-        driver.quit()
 
 
     # Проверка перехода из личного кабинета в конструктор по клику на логотип сайта
@@ -28,5 +27,4 @@ class TestTransitionToTheConstruction:
         WebDriverWait(driver, 3).until(expected_conditions.element_to_be_clickable(LocatorsPage.logo_page))
         driver.find_element(*LocatorsPage.logo_page).click()
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
-        driver.quit()
 

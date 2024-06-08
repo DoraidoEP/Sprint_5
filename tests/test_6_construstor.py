@@ -9,7 +9,6 @@ class TestConstructor:
         driver.find_element(*LocatorsPage.bread_constructor).click()
         assert driver.find_element(*LocatorsPage.select_tab_constructor).text == driver.find_element(
             *LocatorsPage.header_bread_constructor).text
-        driver.quit()
 
 
     # Проверка перехода в раздел «Соусы»
@@ -18,7 +17,6 @@ class TestConstructor:
         driver.find_element(*LocatorsPage.sauce_constructor).click()
         assert driver.find_element(*LocatorsPage.select_tab_constructor).text == driver.find_element(
             *LocatorsPage.header_sauce_constructor).text
-        driver.quit()
 
 
     # Проверка перехода в раздел «Начинки»
@@ -27,5 +25,4 @@ class TestConstructor:
         driver.find_element(*LocatorsPage.filling_constructor).click()
         assert driver.find_element(*LocatorsPage.select_tab_constructor).text == driver.find_element(
             *LocatorsPage.header_filling_constructor).text
-        driver.quit()
 

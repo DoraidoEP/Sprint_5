@@ -12,7 +12,6 @@ class TestEnterTheSite:
         driver.find_element(*LocatorsPage.button_log_in).click()
         enter_butt_test = driver.find_element(*LocatorsPage.button_log_in).text
         assert enter_butt_test == 'Войти'
-        driver.quit()
 
 
     # Проверка на вход через кнопку «Личный кабинет»
@@ -23,7 +22,6 @@ class TestEnterTheSite:
         driver.find_element(*LocatorsPage.button_log_in).click()
         enter_butt_test = driver.find_element(*LocatorsPage.button_log_in).text
         assert enter_butt_test == 'Войти'
-        driver.quit()
 
 
     # Проверка на вход через кнопку в форме регистрации
@@ -36,7 +34,6 @@ class TestEnterTheSite:
         driver.find_element(*LocatorsPage.button_log_in).click()
         enter_butt_test = driver.find_element(*LocatorsPage.button_log_in).text
         assert enter_butt_test == 'Войти'
-        driver.quit()
 
 
     # Проверка на вход через кнопку в форме восстановления пароля
@@ -49,5 +46,4 @@ class TestEnterTheSite:
         driver.find_element(*LocatorsPage.button_log_in).click()
         enter_butt_test = driver.find_element(*LocatorsPage.button_log_in).text
         assert enter_butt_test == 'Войти'
-        driver.quit()
 

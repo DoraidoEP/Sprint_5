@@ -14,5 +14,4 @@ class TestGoToPersonalAccountPage:
         driver.find_element(*LocatorsPage.button_log_in).click()
         driver.find_element(*LocatorsPage.account_butt).click()
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account'
-        driver.quit()
 

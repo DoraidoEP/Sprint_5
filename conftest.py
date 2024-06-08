@@ -7,5 +7,6 @@ def driver():
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://stellarburgers.nomoreparties.site/")
-    return driver
+    yield driver
+    driver.quit()
 

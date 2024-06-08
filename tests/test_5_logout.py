@@ -19,5 +19,4 @@ class TestLogoutPage:
         WebDriverWait(driver, 3).until(expected_conditions.presence_of_element_located(LocatorsPage.log_in_text))
         log_out = driver.find_element(*LocatorsPage.log_in_text).text
         assert log_out == 'Вход'
-        driver.quit()
 

@@ -18,7 +18,6 @@ class TestRegistration:
         WebDriverWait(driver, 3).until(expected_conditions.element_to_be_clickable(LocatorsPage.button_log_in))
         enter_button_test = driver.find_element(*LocatorsPage.button_log_in).text
         assert enter_button_test == 'Войти'
-        driver.quit()
 
 
     # Проверка на ввод некорректного пароля
@@ -31,5 +30,4 @@ class TestRegistration:
         driver.find_element(*LocatorsPage.button_register).click()
         incorrect_pass = driver.find_element(*LocatorsPage.error_field_password).text
         assert incorrect_pass == 'Некорректный пароль'
-        driver.quit()
 
